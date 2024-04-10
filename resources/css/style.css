@@ -1,3 +1,52 @@
 /* Universal */
+
+body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100svh;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 /* Card */
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 1108x444px */
+    background-color: hsl(244, 38%, 16%);
+    border: solid 1px yellow;
+}
+.card-text,
+.card-image {
+    border: solid 1px red;
+    min-height: 27.75rem;
+}
+
+/*.card-text {
+
+}
+
+.cardtxt-header
+.cardtxt-body
+.cardtxt-stats
+.stat-number
+.stat-label
+*/
+.card-image {
+    min-width: 50%;
+    min-height: 100%;
+    background-image: url("../images/image-header-desktop.jpg");
+    background-position: center;
+} 
+
+
 /* Footer */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
