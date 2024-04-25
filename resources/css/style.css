@@ -91,73 +91,56 @@ body {
 }
 
 /* Media Queries */
-
-@media screen and (max-width: 900px) {
-    .stat {
-        margin: 0 1rem 0 0;
-    }
- }
-
- @media screen and (max-width: 850px) {
-    .cardtxt-header {
-        font-size: 1.75rem;
+   
+  @media screen and ( max-width: 1000px ) {
+    .body {
+        min-width: 100%;
+        padding: 0.25rem;
     }
 
-    .card-text {
-        padding: 2rem 3rem;
-    }
- }
-
- @media screen and (max-width: 685px) {
     .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 80%;
-        background-color: hsl(244, 38%, 16%);
-        border-radius: 0.36rem;
-        margin: auto;
+        width: fit-content;
+        flex-direction: column-reverse;
     }
 
     .card-text,
     .card-image {
-        height: 50%;
-        min-height: 16rem;
-        min-width: 100%;
+    min-height: 16rem;
+    width: 100%;
     }
 
     .card-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 1rem 2rem;
+        text-align: center;
+        padding: 1rem;
+    }
 
+    .cardtxt-header {
+        font-size: 1.85rem;
     }
 
     .card-image {
+        background-image: url(../images/image-header-mobile.jpg);
         background-position: top;
-        border-bottom-right-radius: 0.36rem;
-        border-bottom-left-radius: 0.36rem;
+        border-top-left-radius: 0.36rem;
+        border-bottom-right-radius: 0;
     }
- }
-
- @media screen and (max-width: 685px) {
-    .card {
-        min-width: 18rem;
-    }
-
+    
     .stat-number {
         line-height: 0.95rem;
         font-size: 1.25rem;
-        margin: 1rem 0.5rem 0 0;
     }
 
     .stat-label {
         font-size: 0.65rem;
     }
+    
     .cardtxt-stats {
         flex-direction: column;
+        justify-content: center;
         padding-bottom: 1rem;
     }
- }
+
+    .stat {
+        margin: 0;
+    }
+  }
